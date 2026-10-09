@@ -1,0 +1,15 @@
+[project]
+name = "iron-log-backend"
+version = "0.1.0"
+description = "Iron Log — gym workout tracker API (FastAPI + SQLAlchemy + SQLite)"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi==0.141.1",
+    "uvicorn[standard]==0.53.0",
+    "SQLAlchemy==2.0.54",
+    "pydantic==2.13.5",
+    "pydantic-settings==2.15.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
